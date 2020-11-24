@@ -5,8 +5,8 @@ from database import LOCAL_DB,ATLAS_DB,FIELDS
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = ATLAS_DB
-#app.config["MONGO_URI"] = LOCAL_DB
+#app.config["MONGO_URI"] = ATLAS_DB
+app.config["MONGO_URI"] = LOCAL_DB
 mongo = PyMongo(app)
 
 def return_list(return_str):
